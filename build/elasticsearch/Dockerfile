@@ -1,8 +1,8 @@
 FROM docker.elastic.co/elasticsearch/elasticsearch-alpine-base:latest
 MAINTAINER Elastic Docker Team <docker@elastic.co>
 
-ARG ELASTIC_VERSION
-ARG ES_DOWNLOAD_URL
+ENV ELASTIC_VERSION 5.2.1
+ENV ES_DOWNLOAD_URL https://artifacts.elastic.co/downloads/elasticsearch
 ARG ES_JAVA_OPTS
 
 ENV PATH /usr/share/elasticsearch/bin:$PATH
